@@ -1,9 +1,13 @@
 # Enum / Outside abuse
 - NMAP for CVE
+- Dirbusting
+- `http://$ip/<target hostname>`
+- Breaking out of SSH "force SCP" wrappers by overwriting them or the authorized_keys file
 - Check unknown services for specific enumeration techniques (ident for example)
 - Hydra bruteforce against services
 - `Magical` cewl -d 5 -m 3
 - Password reuse for MYSQL,FTP,SSH
+- Default Credentials
 - admin:admin on ANY services
 - username:username
 - Cred Reuse
@@ -19,9 +23,11 @@
 - SNMP community brute
 - POP3 authenticated email retrieval
 - Phish using links to HTTP or revshells.
+- Postfix disclaimer file owned by root and writeable by us `https://viperone.gitbook.io/pentest-everything/writeups/pg-practice/linux/postfish`
 # Post
 - Dangerous SUID binary
 - Non-GTFO SUID binary
+- SUID on writeable file ( echo >>)
 - Password reuse for MYSQL,FTP,SSH
 - username:username
 - Cred Reuse
@@ -31,3 +37,4 @@
   - adm (use aureport if possible)
   - docker
   - disk
+- Highly probable kernel exploits
