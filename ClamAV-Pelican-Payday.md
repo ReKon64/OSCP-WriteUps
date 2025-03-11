@@ -47,3 +47,12 @@ Check for processes that can be dumped for creds.
 Realize there's conveniantly a password-store process running. Dump it with `sudo -u root /usr/bin/gcore -a -o <outputfile> <pid>`
 
 Run strings on dump. Find password. `su` to root using that password.
+
+#Payday
+## Chain
+- Nmap -> CS Cart on 80
+- Check `admin:admin`
+- Search for CVE. You can get RCE as patrick or try LFI
+- LFI -> /etc/passwd
+- Check ssh for `patrick:patrick:`
+- `sudo -l` -> `sudo su`
