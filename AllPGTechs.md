@@ -9,7 +9,8 @@
 
 
 # Enum / Outside abuse
-- NMAP for CVE
+- NMAP service detection for CVE
+- Focus on unnatural ports, google them, if multiple google them together
 - Dirbusting
 - `http://$ip/<target hostname>`
 - Breaking out of SSH "force SCP" wrappers by overwriting them or the authorized_keys file
@@ -34,7 +35,11 @@
 - POP3 authenticated email retrieval
 - Phish using links to HTTP or revshells.
 - Postfix disclaimer file owned by root and writeable by us `https://viperone.gitbook.io/pentest-everything/writeups/pg-practice/linux/postfish`
+- No sanitization on API endpoints / code evaluation. Put e.g. "user=2+2" into an API endpoint
 # Post
+- Files to loot:
+  - db.php
+  - wp-config.php
 - Dangerous SUID binary
 - Non-GTFO SUID binary
 - SUID on writeable file ( echo >>)
@@ -47,4 +52,6 @@
   - adm (use aureport if possible)
   - docker
   - disk
+- Writeable .service file
+- Write yourself into /etc/sudoers
 - Highly probable kernel exploits
