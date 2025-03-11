@@ -1,12 +1,33 @@
-# Enum
+# Enum / Outside abuse
 - NMAP for CVE
+- Check unknown services for specific enumeration techniques (ident for example)
+- Hydra bruteforce against services
+- `Magical` cewl -d 5 -m 3
 - Password reuse for MYSQL,FTP,SSH
-- admin:admin
+- admin:admin on ANY services
 - username:username
+- Cred Reuse
 - Null auth for 
-- -
+  - FTP
+  - SMB
+  - RPC
+  - LDAP
+  - MySQL
+  - PostgreSQL
+- SMTP user enum
+- SNMP with extended MIB snmpwalk
+- SNMP community brute
+- POP3 authenticated email retrieval
+- Phish using links to HTTP or revshells.
 # Post
-- ALL:NOPASSWD on Binary
+- Dangerous SUID binary
+- Non-GTFO SUID binary
 - Password reuse for MYSQL,FTP,SSH
 - username:username
+- Cred Reuse
 - writeable /etc/passwd
+- Limited Shell escape via GTFO binary
+- Group abuse
+  - adm (use aureport if possible)
+  - docker
+  - disk
