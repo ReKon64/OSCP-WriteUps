@@ -53,6 +53,6 @@ Run strings on dump. Find password. `su` to root using that password.
 - Nmap -> CS Cart on 80
 - Check `admin:admin`
 - Search for CVE. You can get RCE as patrick or try LFI
-- LFI -> /etc/passwd
-- Check ssh for `patrick:patrick:`
+- LFI -> `/etc/passwd`
+- Check ssh for `patrick:patrick`
 - `sudo -l` -> `sudo su`
