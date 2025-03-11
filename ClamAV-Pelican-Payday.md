@@ -56,3 +56,15 @@ Run strings on dump. Find password. `su` to root using that password.
 - LFI -> `/etc/passwd`
 - Check ssh for `patrick:patrick`
 - `sudo -l` -> `sudo su`
+
+#Snookums
+## Chain
+- Nmap -> SimplePHPGallery v0.8 on 80
+- Check for CVE -> RCE as `www-data`
+- Loot website folder
+- Log into `mysql`, dump SimplePHPGal database.
+- Put passwords values into `HashID`
+- Try all ssh combinations -> SSH as michael
+- Linpeas tells you you can write `/etc/passwd`
+- Create a new user
+#
