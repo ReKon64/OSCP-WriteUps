@@ -1,3 +1,13 @@
+# Shell Considerations
+- Always host listeners on common ports or mirror a port number used by the target.
+- Always try nc, busybox nc and python for rev shells. PHP can be used but often fails.
+- For powershell revshells, use nishangs shell. Gives a full shell
+- For aspx, use Antak
+- For php try all php shells. "Better ones" may fail where "worse ones" may work
+  - Windows: WolfPHP, Ivan-Sineck
+  - Linux: WolfPHP, Ivan-Sineck, PHP monkey
+
+
 # Enum / Outside abuse
 - NMAP for CVE
 - Dirbusting
