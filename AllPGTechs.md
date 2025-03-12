@@ -37,14 +37,24 @@
 - Postfix disclaimer file owned by root and writeable by us `https://viperone.gitbook.io/pentest-everything/writeups/pg-practice/linux/postfish`
 - No sanitization on API endpoints / code evaluation. Put e.g. "user=2+2" into an API endpoint
 # Post
+## Windows
+- Files to loot:
+  - db.php
+  - inetpub
+- Password reuse for *SQL,FTP,RDP
+- username:username
+- Cred Reuse
+
+## Linux
 - Files to loot:
   - db.php
   - wp-config.php
 - Dangerous SUID binary
 - Non-GTFO SUID binary
 - SUID on writeable file ( echo >>)
-- Password reuse for MYSQL,FTP,SSH
+- Password reuse for *SQL,FTP,SSH,NFS
 - username:username
+- su username:username
 - Cred Reuse
 - writeable /etc/passwd
 - Limited Shell escape via GTFO binary
