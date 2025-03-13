@@ -12,7 +12,11 @@
 
 # SMB Tips
 - Use `mput` and `mget`. Sometimes these commands can do "expected" behaviour that `put` and `get` don't.
-- Avoid losing time by first putting `ntlm_theft.py` SMB coerce files before constructing phishing files with shells. 
+- Avoid losing time by first putting `ntlm_theft.py` payloads that coerce SMB connections before constructing phishing files with shells. 
+
+# LFI Tips
+- Google vulnerable software's docs and or github. Check 'set-up' guides and 'password recovery / change' guides.
+- Any files worth looting in POST are viable loot here too.
 
 # Enum / Outside abuse
 - NMAP service detection for CVE
