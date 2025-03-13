@@ -10,6 +10,10 @@
 # URL Encoding
 - When using exploits or LFIs, try unmodified path url, `../`, `+` encoding and `URL` encoding
 
+# SMB Tips
+- Use `mput` and `mget`. Sometimes these commands can do "expected" behaviour that `put` and `get` don't.
+- Avoid losing time by first putting `ntlm_theft.py` SMB coerce files before constructing phishing files with shells. 
+
 # Enum / Outside abuse
 - NMAP service detection for CVE
 - Focus on unnatural ports, google them, if multiple google them together
@@ -26,6 +30,7 @@
 - WhatWeb medium aggressive
 - phpinfo.php for directive info
 - PHP wrappers for LFI
+- Looting Java files for SQL queries
 - Breaking out of SSH "force SCP" wrappers by overwriting them or the authorized_keys file
 - Check unknown services for specific enumeration techniques (ident for example)
 - Hydra bruteforce against services
@@ -60,6 +65,7 @@
 - Password reuse for *SQL,FTP,RDP
 - username:username
 - Cred Reuse
+- Service hidden behind FW / Service on 127.0.0.1
 
 ## Linux
 - Files to loot:
@@ -77,7 +83,9 @@
 - su username:username
 - Cred Reuse
 - cronjobs
-- WildCard abuse (e.g. Tar wildcard abuse)
+  - WildCard abuse (e.g. Tar wildcard abuse)
+  - use pspy to spy on stuff winpeas won't catch
+- Service hidden behind FW / Service on 127.0.0.1
 - writeable /etc/passwd
 - Limited Shell escape via GTFO binary
 - Group abuse
