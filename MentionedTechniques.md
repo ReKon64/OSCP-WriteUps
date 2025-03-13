@@ -1,4 +1,4 @@
-# Shell Considerations
+# Shell Troubleshooting
 - Always host listeners on common ports or mirror a port number used by the target.
 - Always try nc, busybox nc and python for rev shells. PHP can be used but often fails.
 - For powershell revshells, use nishangs shell. Gives a full shell
@@ -6,6 +6,7 @@
 - For php try all php shells. "Better ones" may fail where "worse ones" may work
   - Windows: WolfPHP, Ivan-Sineck
   - Linux: WolfPHP, Ivan-Sineck, PHP monkey
+- If your shell behaves strangely, try starting another one from it.
 
 # URL Encoding
 - When using exploits or LFIs, try unmodified path url, `../`, `+` encoding and `URL` encoding
@@ -17,6 +18,7 @@
 # LFI Tips
 - Google vulnerable software's docs and or github. Check 'set-up' guides and 'password recovery / change' guides.
 - Any files worth looting in POST are viable loot here too.
+- Check wrappers. They are in scope.
 
 # Enum / Outside abuse
 - NMAP service detection for CVE
@@ -54,6 +56,12 @@
   - MySQL
   - PostgreSQL
 - SQLi / SQLi Auth Bypass
+- VHOST bruteforce / enumeration
+  - Remember to loot files for vhosts too.
+- Exposed `.git` (don't care about forbidden. `git-dump`er it anyways)
+- Thorough wpscan
+  - Exposed `wp-uploads`
+  - Installed vulnerable Core or plugins
 - SMTP user enum
 - SNMP with extended MIB snmpwalk
 - SNMP community brute
@@ -61,6 +69,8 @@
 - Phish using links to HTTP or revshells.
 - Postfix disclaimer file owned by root and writeable by us `https://viperone.gitbook.io/pentest-everything/writeups/pg-practice/linux/postfish`
 - No sanitization on API endpoints / code evaluation. Put e.g. "user=2+2" into an API endpoint
+- Redis exploitation and modifying relevant exploits
+- /proc files may include credentials... `I hate that jenkins exploit alright?`
 # Post
 ## Windows
 - Directories / Files to loot:
@@ -90,12 +100,14 @@
   - WildCard abuse (e.g. Tar wildcard abuse)
   - use pspy to spy on stuff winpeas won't catch
 - Service hidden behind FW / Service on 127.0.0.1
-- writeable /etc/passwd
 - Limited Shell escape via GTFO binary
 - Group abuse
   - adm (use aureport if possible)
   - docker
   - disk
 - Writeable .service file
+- Shared Object hijacking
+- Local git repo that's updateable by us and files will be executed automatically.
 - Write yourself into /etc/sudoers
+- Writeable /etc/passwd
 - Highly probable kernel exploits
