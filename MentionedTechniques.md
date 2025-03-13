@@ -23,6 +23,9 @@
    
       
 - Manual source code inspection for links / comments
+- WhatWeb medium aggressive
+- phpinfo.php for directive info
+- PHP wrappers for LFI
 - Breaking out of SSH "force SCP" wrappers by overwriting them or the authorized_keys file
 - Check unknown services for specific enumeration techniques (ident for example)
 - Hydra bruteforce against services
