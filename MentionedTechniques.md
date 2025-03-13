@@ -107,6 +107,7 @@
   - disk
 - Writeable .service file
 - Shared Object hijacking
+- `git show`
 - Local git repo that's updateable by us and files will be executed automatically.
 - Write yourself into /etc/sudoers
 - Writeable /etc/passwd
