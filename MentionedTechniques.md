@@ -12,15 +12,17 @@
 - NMAP service detection for CVE
 - Focus on unnatural ports, google them, if multiple google them together
 - Dirbusting
-- `http://$ip/<target hostname>`
+  - `/backup`, `/dev`, `/<hostname>`
 - Breaking out of SSH "force SCP" wrappers by overwriting them or the authorized_keys file
 - Check unknown services for specific enumeration techniques (ident for example)
 - Hydra bruteforce against services
-- `Magical` cewl -d 5 -m 3
+- Magical `cewl -d 5 -m 3`
 - Password reuse for MYSQL,FTP,SSH
 - Default Credentials
-- admin:admin on ANY services
+- admin:admin on any services
+- admin:<empty>
 - username:username
+- username:<empty>
 - Cred Reuse
 - Null auth for 
   - FTP
@@ -29,6 +31,7 @@
   - LDAP
   - MySQL
   - PostgreSQL
+- SQLi / SQLi Auth Bypass
 - SMTP user enum
 - SNMP with extended MIB snmpwalk
 - SNMP community brute
@@ -38,9 +41,9 @@
 - No sanitization on API endpoints / code evaluation. Put e.g. "user=2+2" into an API endpoint
 # Post
 ## Windows
-- Files to loot:
+- Directories / Files to loot:
   - db.php
-  - inetpub
+  - /inetpub
 - Password reuse for *SQL,FTP,RDP
 - username:username
 - Cred Reuse
@@ -49,13 +52,19 @@
 - Files to loot:
   - db.php
   - wp-config.php
+  - /var/www
 - Dangerous SUID binary
-- Non-GTFO SUID binary
+  - Non-GTFO SUID binary
 - SUID on writeable file ( echo >>)
+- Bash History
+- SSH Key "reuse"
+- `mail` command
 - Password reuse for *SQL,FTP,SSH,NFS
 - username:username
 - su username:username
 - Cred Reuse
+- cronjobs
+- WildCard abuse (e.g. Tar wildcard abuse)
 - writeable /etc/passwd
 - Limited Shell escape via GTFO binary
 - Group abuse
