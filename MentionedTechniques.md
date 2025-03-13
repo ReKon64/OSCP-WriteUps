@@ -7,11 +7,14 @@
   - Windows: WolfPHP, Ivan-Sineck
   - Linux: WolfPHP, Ivan-Sineck, PHP monkey
 
+# Encoding
+- When using exploits or LFIs, try unmodified path url, `../`, `+` encoding and `URL` encoding
 
 # Enum / Outside abuse
 - NMAP service detection for CVE
 - Focus on unnatural ports, google them, if multiple google them together
 - Dirbusting
+  - Wordlists `web/discovery/common.txt`, `directory-list-2-3-medium` Service Related Wordlist 
   - `/backup`, `/dev`, `/<hostname>`
 - Breaking out of SSH "force SCP" wrappers by overwriting them or the authorized_keys file
 - Check unknown services for specific enumeration techniques (ident for example)
