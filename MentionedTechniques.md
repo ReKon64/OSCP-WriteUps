@@ -41,6 +41,10 @@
 - phpinfo.php for directive info
 - PHP wrappers for LFI
 - Looting Java files for SQL queries
+- Vulnerable file upload
+  - Magic Number manipulation (remember to check how the file looks after the edit)
+  - Extension bypasses
+  - File Type header manipulation
 - Breaking out of SSH "force SCP" wrappers by overwriting them or the authorized_keys file
 - Check unknown services for specific enumeration techniques (ident for example)
 - Hydra bruteforce against services
@@ -106,8 +110,8 @@
 - su username:username
 - Cred Reuse
 - cronjobs
-  - WildCard abuse (e.g. Tar wildcard abuse)
-  - use pspy to spy on stuff winpeas won't catch
+  - WildCard abuse (e.g. Tar wildcard abuse, 7zip @ abuse)
+  - Use pspy to spy on stuff linpeas won't catch. They really love those.
 - Service hidden behind FW / Service on 127.0.0.1
 - Limited Shell escape via GTFO binary
 - Group abuse
