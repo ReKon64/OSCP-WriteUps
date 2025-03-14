@@ -20,6 +20,10 @@
 - Any files worth looting in POST are viable loot here too.
 - Check wrappers. They are in scope.
 
+# Proprietary Software
+- Decryption exploits
+- Easy to exploit LFIs due to abundance of information about config file locations
+
 # Enum / Outside abuse
 - NMAP service detection for CVE
 - Focus on unnatural ports, google them, if multiple google them together
