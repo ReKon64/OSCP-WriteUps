@@ -47,6 +47,7 @@
 - admin:<empty>
 - username:username
 - username:<empty>
+- admin:password
 - Cred Reuse
 - Null auth for 
   - FTP
@@ -56,6 +57,8 @@
   - MySQL
   - PostgreSQL
 - SQLi / SQLi Auth Bypass
+- SSRF, like putting your SMB share into a field to coerce authentication
+- Abusing setup phase software. Read docs... lots of docs
 - VHOST bruteforce / enumeration
   - Remember to loot files for vhosts too.
 - Exposed `.git` (don't care about forbidden. `git-dump`er it anyways)
@@ -82,6 +85,7 @@
 - Service hidden behind FW / Service on 127.0.0.1
 
 ## Linux
+- PWNKit https://github.com/ly4k/PwnKit
 - Files to loot:
   - db.php
   - wp-config.php
@@ -94,6 +98,7 @@
 - `mail` command
 - Password reuse for *SQL,FTP,SSH,NFS
 - username:username
+- admin:password
 - su username:username
 - Cred Reuse
 - cronjobs
