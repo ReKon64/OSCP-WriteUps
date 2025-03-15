@@ -39,6 +39,7 @@
 - Manual source code inspection for links / comments
 - WhatWeb medium aggressive
 - phpinfo.php for directive info
+- Also check phpinfo.php for additional technology that might be vulnerable (e.g. SPX)
 - PHP wrappers for LFI
 - Looting Java files for SQL queries
 - Vulnerable file upload
@@ -66,7 +67,8 @@
   - PostgreSQL
 - SQLi / SQLi Auth Bypass
 - SSRF, like putting your SMB share into a field to coerce authentication
-- Abusing setup phase software. Read docs... lots of docs
+- Abusing setup phase software. Read docs... lots of docs. Read githubs...
+  - Rouge MySQL server https://github.com/allyshka/Rogue-MySql-Server/blob/master/roguemysql.php
 - VHOST bruteforce / enumeration
   - Remember to loot files for vhosts too.
 - Exposed `.git` (don't care about forbidden. `git-dump`er it anyways)
@@ -125,3 +127,8 @@
 - Write yourself into /etc/sudoers
 - Writeable /etc/passwd
 - Highly probable kernel exploits
+
+# Box Types
+CVE -> Privesc -> Root
+Weak Creds -> Abuse Builtin functionality -> Privesc -> Root
+
