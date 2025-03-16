@@ -13,7 +13,14 @@
 
 # SMB Tips
 - Use `mput` and `mget`. Sometimes these commands can do "expected" behaviour that `put` and `get` don't.
-- Avoid losing time by first putting `ntlm_theft.py` payloads that coerce SMB connections before constructing phishing files with shells. 
+- Avoid losing time by first putting `ntlm_theft.py` payloads that coerce SMB connections before constructing phishing files with shells.
+- Do all nmap SMB scripts against windows hosts.
+
+# FTP
+- anon and user:user
+- One port may host multiple folders that can be exposed under different credentials
+- Linux common root: /var/ftp/pub
+- Windows common root: (?) C:\ftp
 
 # LFI Tips
 - Google vulnerable software's docs and or github. Check 'set-up' guides and 'password recovery / change' guides.
@@ -96,6 +103,7 @@
 - Always Install elevated
 - Creds in Running service (itm4n PrivEscCheck for this)
 - Overwrite a service.exe file
+- systeminfo + wesng.py
 
 ## Linux
 - PWNKit https://github.com/ly4k/PwnKit
