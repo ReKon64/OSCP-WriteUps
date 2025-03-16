@@ -93,6 +93,9 @@
 - username:username
 - Cred Reuse
 - Service hidden behind FW / Service on 127.0.0.1
+- Always Install elevated
+- Creds in Running service (itm4n PrivEscCheck for this)
+- Overwrite a service.exe file
 
 ## Linux
 - PWNKit https://github.com/ly4k/PwnKit
