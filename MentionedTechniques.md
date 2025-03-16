@@ -31,6 +31,16 @@
 - Decryption exploits
 - Easy to exploit LFIs due to abundance of information about config file locations
 
+# PHPINFO
+- Generic
+  - `USERNAME`
+  - `USERPROFILE` - Windows path to `USERNAME`'s home directory
+  - `LOGONSERVER` - Can be used as a directory on the server like : `/logonserverValue`
+- For LFIs check:
+  - `upload_tmp_dir`
+  - `allow_url_fopen` - LFI at least
+  - `allow_url_include` - RFI (?) + / LFI with wrappers or RFI with wrappers
+  
 # Enum / Outside abuse
 - NMAP service detection for CVE
 - Focus on unnatural ports, google them, if multiple google them together
