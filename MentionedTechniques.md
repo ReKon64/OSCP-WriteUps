@@ -75,6 +75,7 @@
 - username:<empty>
 - admin:password
 - Cred Reuse
+- 404 page exposing underlying technology (e.g. Laravel) 
 - Null auth for 
   - FTP
   - SMB
