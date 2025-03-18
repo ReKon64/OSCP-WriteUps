@@ -54,6 +54,7 @@
    
       
 - Manual source code inspection for links / comments
+- .htaccess upload
 - WhatWeb medium aggressive
 - phpinfo.php for directive info
 - Also check phpinfo.php for additional technology that might be vulnerable (e.g. SPX)
