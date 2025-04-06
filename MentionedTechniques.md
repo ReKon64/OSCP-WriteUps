@@ -31,6 +31,12 @@
 - Decryption exploits
 - Easy to exploit LFIs due to abundance of information about config file locations
 
+# XAMPP
+- Dirbust
+- Webdav exploit
+- Default credentials
+- phpmyadmin exploits
+
 # PHPINFO
 - Generic
   - `USERNAME`
