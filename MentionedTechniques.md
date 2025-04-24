@@ -122,6 +122,8 @@
 - Creds in Running service (itm4n PrivEscCheck for this)
 - Overwrite a service.exe file
 - systeminfo + wesng.py
+- Installed Service/App has a password decryption vuln
+- Same app we used to gain RCE has an LPE
 
 ## Linux
 - PWNKit https://github.com/ly4k/PwnKit
