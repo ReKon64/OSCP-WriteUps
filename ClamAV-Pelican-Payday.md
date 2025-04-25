@@ -57,7 +57,8 @@ Run strings on dump. Find password. `su` to root using that password.
 - Check ssh for `patrick:patrick`
 - `sudo -l` -> `sudo su`
 
-#Snookums
+
+# Snookums
 ## Chain
 - Nmap -> SimplePHPGallery v0.8 on 80
 - Check for CVE -> RCE as `www-data`
