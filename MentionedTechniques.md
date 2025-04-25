@@ -124,6 +124,8 @@
 - systeminfo + wesng.py
 - Installed Service/App has a password decryption vuln
 - Same app we used to gain RCE has an LPE
+- Loot userdir,C:\, winpeas->itm4n->lazagne
+- nxc spray hashes, passwords among all protos. Double check winrm. Remember ACLs don't show on bh scans
 
 ## Linux
 - PWNKit https://github.com/ly4k/PwnKit
